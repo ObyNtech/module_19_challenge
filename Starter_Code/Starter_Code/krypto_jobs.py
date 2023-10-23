@@ -156,7 +156,7 @@ st.sidebar.markdown("## Client Account Address and Ethernet Balance in Ether")
 
 # @TODO:
 #  Call the `generate_account` function and save it as the variable `account`
-account = generate_account
+account = generate_account()
 
 ##########################################
 
@@ -173,7 +173,7 @@ st.sidebar.write("Ethereum Account Address")
 # @TODO
 # Call `get_balance` function and pass it your account address
 # Write the returned ether balance to the sidebar
-ether_balance = get_balance(Ethereum Account Address)
+ether_balance = get_balance(w3, account.address )
 st.sidebar.write(ether_balance)
 
 
